@@ -5,9 +5,19 @@ import { theme } from "../theme/theme";
 const SocialNetworksWidget = () => {
   return (
     <SocialNetworksWidgetStyled>
-      <i className="fa-brands fa-github"></i>
-      <i className="fa-brands fa-linkedin-in"></i>
-      <i className="fa-brands fa-twitter"></i>
+      <a href="https://github.com/DevNdy" target="_blank" rel="noreferrer">
+        <i className="fa-brands fa-github iGitHub"></i>
+      </a>
+      <a href="https://linkedin.com/in/kévin-naudy-b18a9b249" target="_blank" rel="noreferrer">
+        <i className="fa-brands fa-linkedin iLinkdin"></i>
+      </a>
+      <a
+        href={`https://twitter.com/dev_ndy?t=BJsZoZ5vebP6gCCpW9zn7A&s=09`}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <i className="fa-brands fa-twitter iTwitter"></i>
+      </a>
     </SocialNetworksWidgetStyled>
   );
 };
