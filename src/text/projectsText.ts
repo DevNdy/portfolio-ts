@@ -10,6 +10,7 @@ export interface ProjectsProps {
   description: string;
   url: string;
   img: string;
+  responsive: boolean;
 }
 
 export const projects = [
@@ -20,6 +21,7 @@ export const projects = [
       "Web app sur les cryptomonnaies, suivie du cours du bitcoin et des altcoins. Réalisé avec React js => chart js, axios (API), context, react router, styled-components, responsive.",
     url: "https://cryptos-tailwind-tsx.vercel.app/",
     img: cryptoImg,
+    responsive: false,
   },
   {
     id: 2,
@@ -28,6 +30,7 @@ export const projects = [
       "Web app sur les cryptomonnaies, suivie du cours du bitcoin et des altcoins. Réalisé avec React js => chart js, axios (API), context, react router, styled-components, responsive.",
     url: "https://immobilier-react-devndy.vercel.app/",
     img: immoImg,
+    responsive: false,
   },
   {
     id: 3,
@@ -36,6 +39,7 @@ export const projects = [
       "Web app sur les cryptomonnaies, suivie du cours du bitcoin et des altcoins. Réalisé avec React js => chart js, axios (API), context, react router, styled-components, responsive.",
     url: "https://portfolio-ndy-devndy.vercel.app/",
     img: christmasImg,
+    responsive: false,
   },
   {
     id: 4,
@@ -44,6 +48,7 @@ export const projects = [
       "Web app sur les cryptomonnaies, suivie du cours du bitcoin et des altcoins. Réalisé avec React js => chart js, axios (API), context, react router, styled-components, responsive.",
     url: "https://portfolio-ndy-devndy.vercel.app/",
     img: portfolioImg,
+    responsive: true,
   },
   {
     id: 5,
@@ -52,5 +57,6 @@ export const projects = [
       "Web app sur les cryptomonnaies, suivie du cours du bitcoin et des altcoins. Réalisé avec React js => chart js, axios (API), context, react router, styled-components, responsive.",
     url: "https://portfolio-ndy-devndy.vercel.app/",
     img: infosImg,
+    responsive: false,
   },
 ];

@@ -16,6 +16,7 @@ const ProjectsList = () => {
           description={e.description}
           url={e.url}
           img={e.img}
+          responsive={e.responsive ? "Responsive" : "! Pas Responsive !"}
         />
       ))}
       <h4>D'autres projets à venir...</h4>

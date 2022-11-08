@@ -7,9 +7,17 @@ interface ArticleProps {
   description: string;
   onClick: () => {} | void;
   url: string;
+  responsive: string;
 }
 
-const ProjectCard: React.FC<ArticleProps> = ({ onClick, name, description, url, img }) => {
+const ProjectCard: React.FC<ArticleProps> = ({
+  onClick,
+  name,
+  description,
+  url,
+  img,
+  responsive,
+}) => {
   return (
     <ProjectCardStyled onClick={onClick}>
       <div>
@@ -19,6 +27,7 @@ const ProjectCard: React.FC<ArticleProps> = ({ onClick, name, description, url, 
         <a href={url} target="_blank" rel="noreferrer">
           <h3>{name}</h3>
           <p>{description}</p>
+          <span>{responsive}</span>
         </a>
       </div>
     </ProjectCardStyled>
@@ -47,19 +56,32 @@ const ProjectCardStyled = styled.div`
     color: white;
     height: 400px;
     width: 550px;
-    display: flex;
     opacity: 0;
     transform: scaleY(0);
     transition: 0.7s;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
 
     a {
       text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 10px;
       h3 {
         font-size: 3rem;
         color: white;
+      }
+
+      p {
+        color: white;
+        width: 400px;
+      }
+
+      span {
+        margin-top: 40px;
+        font-weight: 600;
+        color: white;
+        border: 1px solid white;
+        padding: 5px 8px 5px 8px;
       }
     }
   }
