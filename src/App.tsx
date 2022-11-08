@@ -1,5 +1,13 @@
+import Home from "./pages/Home";
+import SocialNetworksWidget from "./ui-reusable/SocialNetworksWidget";
+
 function App() {
-  return <div className="App">hello</div>;
+  return (
+    <>
+      <SocialNetworksWidget />
+      <Home />
+    </>
+  );
 }
 
 export default App;
