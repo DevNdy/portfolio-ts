@@ -30,10 +30,7 @@ const ProjectCardStyled = styled.div`
   transition: 0.3s;
   margin: 15px 0 0 15px;
   cursor: pointer;
-  h3 {
-    font-size: 1rem;
-    color: orange;
-  }
+
   &:hover {
     transform: scale(1.05);
     z-index: 2;
@@ -46,7 +43,7 @@ const ProjectCardStyled = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(216, 49, 91, 0.9);
     color: white;
     height: 400px;
     width: 550px;
@@ -57,28 +54,13 @@ const ProjectCardStyled = styled.div`
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    span {
-      margin: 10px;
-      list-style: none;
-      font-size: 14px;
-      text-align: start;
-      .name {
-        margin: 0;
-        font-weight: 600;
+
+    a {
+      text-decoration: none;
+      h3 {
+        font-size: 3rem;
+        color: white;
       }
-    }
-    .date {
-      font-style: italic;
-      font-size: 12px;
-      opacity: 0.9;
-      text-align: center;
-    }
-    button {
-      background-color: orange;
-      border: none;
-      border-radius: 5px;
-      margin-top: 15px;
-      cursor: pointer;
     }
   }
   img {

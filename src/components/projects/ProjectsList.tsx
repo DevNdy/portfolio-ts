@@ -1,52 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 import ProjectCard from "./ProjectCard";
-import cryptoImg from "../../assets/images/crypto.png";
-import immoImg from "../../assets/images/immo.png";
-import portfolioImg from "../../assets/images/portfolio.png";
-import christmasImg from "../../assets/images/christmas.png";
-import infosImg from "../../assets/images/infos.png";
-import mtcImg from "../../assets/images/mtc.png";
+import { theme } from "../../theme/theme";
+import { projects } from "../../text/projectsText";
+import { ProjectsProps } from "../../text/projectsText";
 
 const ProjectsList = () => {
   return (
     <ProjectsListStyled>
-      <ProjectCard
-        name="Cryptomonnaies"
-        onClick={() => {}}
-        description="helllo"
-        url="null"
-        img={cryptoImg}
-      />
-      <ProjectCard
-        name="Cryptomonnaies"
-        onClick={() => {}}
-        description="helllo"
-        url="null"
-        img={immoImg}
-      />
-      <ProjectCard
-        name="Cryptomonnaies"
-        onClick={() => {}}
-        description="helllo"
-        url="null"
-        img={christmasImg}
-      />
-      <ProjectCard
-        name="Cryptomonnaies"
-        onClick={() => {}}
-        description="helllo"
-        url="null"
-        img={portfolioImg}
-      />
-      <ProjectCard
-        name="Cryptomonnaies"
-        onClick={() => {}}
-        description="helllo"
-        url="null"
-        img={infosImg}
-      />
-
+      {projects.map((e: ProjectsProps) => (
+        <ProjectCard
+          key={e.id}
+          name={e.name}
+          onClick={() => {}}
+          description={e.description}
+          url={e.url}
+          img={e.img}
+        />
+      ))}
       <h4>D'autres projets à venir...</h4>
     </ProjectsListStyled>
   );
@@ -66,6 +37,7 @@ const ProjectsListStyled = styled.div`
   h4 {
     font-size: 30px;
     font-weight: 400;
+    color: ${theme.colors.gray};
     display: flex;
     flex-direction: column;
     align-items: center;
