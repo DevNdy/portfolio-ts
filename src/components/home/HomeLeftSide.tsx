@@ -35,7 +35,6 @@ const HomeLeftSideStyled = styled.div`
 
   h1 {
     margin: 250px 0 180px 100px;
-
     color: ${theme.colors.primaryColor};
     font-size: 75px;
     display: flex;

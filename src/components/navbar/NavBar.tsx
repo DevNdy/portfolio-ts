@@ -28,8 +28,9 @@ const NavBarStyled = styled.header`
   z-index: 50;
 
   i {
-    width: 4rem;
+    width: 6rem;
     height: 4rem;
+    margin-right: 10px;
     color: ${theme.colors.gray};
     font-size: 25px;
     border-left: 0.5px solid ${theme.colors.primaryColor};

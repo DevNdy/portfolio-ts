@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
+import { AppContext } from "../../context/Context";
 import { theme } from "../../theme/theme";
 
 const NavBarNav = () => {
+  const { refHome, refProjects, refAbout, refContact } = useContext(AppContext);
+
   return (
     <NavBarNavStyled>
       <ul>
-        <li>- Accueil</li>
-        <li>- Mes projets</li>
-        <li>- Plus sur moi</li>
-        <li>- Contact</li>
+        <li onClick={() => refHome.current.scrollIntoView({ behavior: "smooth" })}>- Accueil</li>
+        <li onClick={() => refProjects.current.scrollIntoView({ behavior: "smooth" })}>
+          - Mes projets
+        </li>
+        <li onClick={() => refAbout.current.scrollIntoView({ behavior: "smooth" })}>
+          - Plus sur moi
+        </li>
+        <li onClick={() => refContact.current.scrollIntoView({ behavior: "smooth" })}>- Contact</li>
       </ul>
     </NavBarNavStyled>
   );

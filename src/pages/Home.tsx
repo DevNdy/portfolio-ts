@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import HomeLeftSide from "../components/home/HomeLeftSide";
 import HomeRightSide from "../components/home/HomeRightSide";
+import { AppContext } from "../context/Context";
 
 const Home = () => {
+  const { refHome } = useContext(AppContext);
   return (
-    <HomeStyled>
+    <HomeStyled ref={refHome}>
       <HomeLeftSide />
       <HomeRightSide />
     </HomeStyled>
@@ -13,8 +15,8 @@ const Home = () => {
 };
 
 const HomeStyled = styled.div`
-  height: 100vh;
-  width: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
   background-color: white;
   display: flex;
   flex-direction: row;
