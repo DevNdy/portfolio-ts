@@ -25,6 +25,7 @@ const NavBarStyled = styled.header`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  z-index: 50;
 
   i {
     width: 4rem;
