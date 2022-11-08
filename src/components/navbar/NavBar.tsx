@@ -2,11 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { theme } from "../../theme/theme";
 import LogoDev from "../../ui-reusable/LogoDev";
+import NavBarNav from "./NavBarNav";
 
 const NavBar = () => {
   return (
     <NavBarStyled>
       <LogoDev />
+      <NavBarNav />
       <i className="fa-solid fa-bars"></i>
     </NavBarStyled>
   );
@@ -18,7 +20,7 @@ const NavBarStyled = styled.header`
   height: 4rem;
   width: 100vw;
   background-color: white;
-  border-bottom: 1px solid ${theme.colors.primaryColor};
+  border-bottom: 0.5px solid ${theme.colors.primaryColor};
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -29,7 +31,7 @@ const NavBarStyled = styled.header`
     height: 4rem;
     color: ${theme.colors.gray};
     font-size: 25px;
-    border-left: 1px solid ${theme.colors.primaryColor};
+    border-left: 0.5px solid ${theme.colors.primaryColor};
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -5,9 +5,9 @@ import { theme } from "../theme/theme";
 const SocialNetworksWidget = () => {
   return (
     <SocialNetworksWidgetStyled>
-      <i className="fa-brands fa-twitter"></i>
       <i className="fa-brands fa-github"></i>
       <i className="fa-brands fa-linkedin-in"></i>
+      <i className="fa-brands fa-twitter"></i>
     </SocialNetworksWidgetStyled>
   );
 };
@@ -19,7 +19,7 @@ const SocialNetworksWidgetStyled = styled.div`
   height: 250px;
   width: 70px;
   background-color: white;
-  border: 1px solid ${theme.colors.primaryColor};
+  border: 0.5px solid ${theme.colors.primaryColor};
   border-left: none;
   border-radius: 8px;
   display: flex;
