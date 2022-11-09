@@ -53,6 +53,7 @@ const ProjectCardStyled = styled.div`
     top: 0;
     left: 0;
     background: rgba(216, 49, 91, 0.9);
+    border-radius: 8px;
     color: white;
     height: 400px;
     width: 550px;
