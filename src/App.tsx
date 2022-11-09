@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Footer from "./components/footer/Footer";
 import NavBar from "./components/navbar/NavBar";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -15,6 +16,7 @@ function App() {
       <Projects />
       <About />
       <Contact />
+      <Footer />
     </>
   );
 }

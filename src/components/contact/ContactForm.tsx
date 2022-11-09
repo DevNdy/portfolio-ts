@@ -1,21 +1,41 @@
 import React, { useRef } from "react";
 import styled from "styled-components";
 import { theme } from "../../theme/theme";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
-  const form = useRef();
+  const form = useRef<any>(null);
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+
+    emailjs.sendForm("service_8zow4ce", "template_b5y1a24", form.current, "jFtQIu6lpPKsGjR1Y").then(
+      (result) => {
+        console.log(result.text);
+        alert("Votre message a bien été envoyé! Merci d'avoir visité mon portfolio, à bientôt.");
+        e.target.reset();
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+  };
   return (
-    <ContactFormStyled>
+    <ContactFormStyled ref={form} onSubmit={sendEmail}>
       <input type="text" placeholder="Quel est votre nom?" name="user_name" required />
       <input type="email" placeholder="Quel est votre email?" name="user_email" required />
       <textarea rows={10} cols={10} placeholder="Quel est votre message?" name="message" required />
       <button>envoyer le message</button>
+
+      <h3>
+        <span>ou</span>
+        developpeur.ndy@gmail.com
+      </h3>
     </ContactFormStyled>
   );
 };
 
 const ContactFormStyled = styled.form`
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,9 +80,25 @@ const ContactFormStyled = styled.form`
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
+    transition: 0.4s;
     &:hover {
       background-color: ${theme.colors.primaryColor};
       color: white;
+    }
+  }
+
+  h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 300;
+    font-style: italic;
+    color: ${theme.colors.gray};
+
+    span {
+      font-size: 15px;
+      margin-bottom: 10px;
+      font-weight: 100;
     }
   }
 `;
