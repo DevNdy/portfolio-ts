@@ -30,7 +30,7 @@ export const projects = [
       "Web app sur les cryptomonnaies, suivie du cours du bitcoin et des altcoins. Réalisé avec React js => chart js, axios (API), context, react router, styled-components, responsive.",
     url: "https://immobilier-react-devndy.vercel.app/",
     img: immoImg,
-    responsive: false,
+    responsive: true,
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ export const projects = [
   },
   {
     id: 4,
-    name: "Porfolio Gen.1 ",
+    name: "Portfolio Gen.1 ",
     description:
       "Web app sur les cryptomonnaies, suivie du cours du bitcoin et des altcoins. Réalisé avec React js => chart js, axios (API), context, react router, styled-components, responsive.",
     url: "https://portfolio-ndy-devndy.vercel.app/",
