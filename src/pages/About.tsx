@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
+import AboutSkills from "../components/about/AboutSkills";
 import MyPresentation from "../components/about/MyPresentation";
 import { AppContext } from "../context/Context";
 import TitlePage from "../ui-reusable/TitlePage";
@@ -11,6 +12,7 @@ const About = () => {
     <AboutStyled ref={refAbout}>
       <TitlePage title="En savoir plus sur moi" />
       <MyPresentation />
+      <AboutSkills />
     </AboutStyled>
   );
 };
