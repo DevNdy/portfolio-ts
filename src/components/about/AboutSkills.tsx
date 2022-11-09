@@ -19,7 +19,7 @@ const AboutSkills = () => {
         <BtnSkill icon={<i className="fa-solid fa-plus"></i>} onClick={() => setOpenSkill(3)} />
       </div>
       {openSkill === 1 ? (
-        <SkillWindow imgSkill={imgTech} title="Technologie" />
+        <SkillWindow imgSkill={imgTech} title="Technologies" />
       ) : openSkill === 2 ? (
         <SkillWindow imgSkill={imgDesign} title="Design" />
       ) : openSkill === 3 ? (
