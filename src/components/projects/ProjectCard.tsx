@@ -36,9 +36,9 @@ const ProjectCard: React.FC<ArticleProps> = ({
 
 const ProjectCardStyled = styled.div`
   border-radius: 4px;
-  transition: 0.3s;
   margin: 15px 0 0 15px;
   cursor: pointer;
+  transition: 0.7s;
 
   &:hover {
     transform: scale(1.05);

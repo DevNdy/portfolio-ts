@@ -12,8 +12,8 @@ const SkillWindow = ({ imgSkill, title }: SkillWindowProps) => {
     <SkillWindowStyled>
       <h3>{title}</h3>
       <div className="divImg">
-        {imgSkill.map((e: string) => (
-          <img src={e} alt="skill" />
+        {imgSkill.map((e: string, i: number) => (
+          <img key={i} src={e} alt="skill" />
         ))}
       </div>
     </SkillWindowStyled>
@@ -22,7 +22,7 @@ const SkillWindow = ({ imgSkill, title }: SkillWindowProps) => {
 
 const SkillWindowStyled = styled.div`
   margin-left: 100px;
-  height: 320px;
+  height: 253px;
   width: 500px;
   background-color: #f9f5f5;
   border-radius: 12px;
@@ -36,7 +36,7 @@ const SkillWindowStyled = styled.div`
   }
 
   .divImg {
-    height: 280px;
+    height: 210px;
     width: 500px;
     display: flex;
     flex-direction: row;
@@ -44,7 +44,7 @@ const SkillWindowStyled = styled.div`
     align-items: center;
     justify-content: space-evenly;
     img {
-      height: 60px;
+      height: 40px;
       margin: 0 25px 0 25px;
     }
   }

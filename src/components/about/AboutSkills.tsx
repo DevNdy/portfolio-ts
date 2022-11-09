@@ -39,7 +39,7 @@ const AboutSkillsStyled = styled.div`
   justify-content: space-evenly;
 
   .btnSkills {
-    height: 400px;
+    height: 320px;
     width: 80px;
     display: flex;
     flex-direction: column;
@@ -47,7 +47,7 @@ const AboutSkillsStyled = styled.div`
   }
 
   .divSkills {
-    height: 320px;
+    height: 253px;
     width: 500px;
     margin-left: 100px;
     left: 100px;

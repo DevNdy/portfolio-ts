@@ -25,7 +25,7 @@ const ProjectsList = () => {
 };
 
 const ProjectsListStyled = styled.div`
-  margin-bottom: 20px;
+  margin: 40px 0 20px;
   padding: 10px 30px 10px 10px;
   border-radius: 12px;
   background-color: #f4f3f3;

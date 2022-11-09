@@ -15,7 +15,7 @@ const TitlePage = ({ title }: TitleProps) => {
 };
 
 const TitlePageStyled = styled.h2`
-  margin: 150px 0 80px;
+  margin: 150px 0 40px;
   font-size: 40px;
   font-weight: 500;
   color: ${theme.colors.title};
