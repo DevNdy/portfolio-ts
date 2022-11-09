@@ -4,6 +4,7 @@ import BtnSkill from "../../ui-reusable/BtnSkill";
 import SkillWindow from "../../ui-reusable/SkillWindow";
 import { imgTech, imgOther, imgDesign } from "../../text/skillImg";
 import { theme } from "../../theme/theme";
+import { skills } from "../../text/skillText";
 
 const AboutSkills = () => {
   const [openSkill, setOpenSkill] = useState(0);
@@ -19,13 +20,13 @@ const AboutSkills = () => {
         <BtnSkill icon={<i className="fa-solid fa-plus"></i>} onClick={() => setOpenSkill(3)} />
       </div>
       {openSkill === 1 ? (
-        <SkillWindow imgSkill={imgTech} title="Technologies" />
+        <SkillWindow imgSkill={imgTech} title="Technologies" description={skills} />
       ) : openSkill === 2 ? (
-        <SkillWindow imgSkill={imgDesign} title="Design" />
+        <SkillWindow imgSkill={imgDesign} title="Design" description={skills} />
       ) : openSkill === 3 ? (
-        <SkillWindow imgSkill={imgOther} title="Autres" />
+        <SkillWindow imgSkill={imgOther} title="Autres" description={skills} />
       ) : (
-        <span className="divSkills">Mes Skills</span>
+        <SkillWindow imgSkill={[]} title="Mes Skills" description={skills} />
       )}
     </AboutSkillsStyled>
   );
