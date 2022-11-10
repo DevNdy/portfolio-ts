@@ -6,7 +6,7 @@ const TextAnimScroll = () => {
   return <TextAnimScrollStyled>Scroll {"---"}</TextAnimScrollStyled>;
 };
 
-const TextAnimScrollStyled = styled.h6`
+const TextAnimScrollStyled = styled.div`
   transform: rotate(90deg);
   width: 60px;
   height: 20px;
