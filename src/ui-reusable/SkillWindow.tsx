@@ -18,8 +18,8 @@ const SkillWindow = ({ imgSkill, title, description }: SkillWindowProps) => {
         ))}
       </div>
       <div className="infoSkill">
-        {description.map((e: string) => (
-          <span>{e}</span>
+        {description.map((e: string, i: number) => (
+          <span key={i}>{e}</span>
         ))}
       </div>
     </SkillWindowStyled>
@@ -83,10 +83,10 @@ const SkillWindowStyled = styled.div`
     justify-content: center;
 
     span {
-      margin-top: 30px;
+      margin-top: 10px;
       font-weight: 600;
       font-size: 22px;
-      color: white;
+      color: #ececec;
     }
   }
 `;

@@ -1,6 +1,7 @@
 import firebase from "../assets/images/techno/firebase.png";
 import react from "../assets/images/techno/react.png";
 import flutter from "../assets/images/techno/flutter.png";
+import tailwind from "../assets/images/techno/tailwind.png";
 
 export const imgTech = [
   react,
@@ -11,6 +12,7 @@ export const imgTech = [
   flutter,
   firebase,
   "https://miro.medium.com/max/400/1*b7DwaOEfreG253K8Z_QzkA.png",
+  tailwind,
 ];
 
 export const imgDesign = [

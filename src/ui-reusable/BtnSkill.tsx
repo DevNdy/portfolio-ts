@@ -4,11 +4,11 @@ import { theme } from "../theme/theme";
 
 interface BtnSkillProps {
   icon: any;
-  onClick: () => void;
+  onMouseEnter: () => void;
 }
 
-const BtnSkill = ({ icon, onClick }: BtnSkillProps) => {
-  return <BtnSkillStyled onClick={onClick}>{icon}</BtnSkillStyled>;
+const BtnSkill = ({ icon, onMouseEnter }: BtnSkillProps) => {
+  return <BtnSkillStyled onMouseEnter={onMouseEnter}>{icon}</BtnSkillStyled>;
 };
 
 const BtnSkillStyled = styled.button`
