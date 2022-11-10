@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import BtnSkill from "../../ui-reusable/BtnSkill";
-import SkillWindow from "../../ui-reusable/SkillWindow";
+import SkillWindow from "./SkillWindow";
 import { imgTech, imgOther, imgDesign } from "../../text/skillImg";
 import { theme } from "../../theme/theme";
 import { skills, skillTextTech, skillDesign, skillOther } from "../../text/skillText";

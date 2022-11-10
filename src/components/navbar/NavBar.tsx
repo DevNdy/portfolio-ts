@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { theme } from "../../theme/theme";
 import LogoDev from "../../ui-reusable/LogoDev";
+import NavBarMenuIcon from "./NavBarMenuIcon";
 import NavBarNav from "./NavBarNav";
 
 const NavBar = () => {
@@ -9,7 +10,10 @@ const NavBar = () => {
     <NavBarStyled>
       <LogoDev />
       <NavBarNav />
-      <i className="fa-solid fa-bars"></i>
+      <i className="fa-solid fa-phone">
+        <span>+336 41 98 17 08</span>
+      </i>
+      {/* <i className="fa-solid fa-bars"></i> */}
     </NavBarStyled>
   );
 };
@@ -28,9 +32,10 @@ const NavBarStyled = styled.header`
   z-index: 50;
 
   i {
-    width: 6rem;
-    height: 4rem;
+    width: 9rem;
+    height: 2.9rem;
     margin-right: 10px;
+    padding-top: 20px;
     color: ${theme.colors.gray};
     font-size: 25px;
     border-left: 0.5px solid ${theme.colors.primaryColor};
@@ -38,11 +43,22 @@ const NavBarStyled = styled.header`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
     transition: 0.5s;
     &:hover {
-      color: white;
+      color: ${theme.colors.primaryColor};
       background-color: ${theme.colors.primaryColor};
+      span {
+        opacity: 1;
+      }
+    }
+    span {
+      position: relative;
+      top: -20px;
+      font-family: sans-serif;
+      font-size: 14px;
+      color: white;
+      transition: 0.5s;
+      opacity: 0;
     }
   }
 `;

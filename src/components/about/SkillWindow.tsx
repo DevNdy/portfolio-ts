@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { theme } from "../theme/theme";
+import { theme } from "../../theme/theme";
 
 interface SkillWindowProps {
   imgSkill: string[];
@@ -84,8 +84,8 @@ const SkillWindowStyled = styled.div`
 
     span {
       margin-top: 10px;
-      font-weight: 600;
-      font-size: 22px;
+      font-weight: 800;
+      font-size: 25px;
       color: #ececec;
     }
   }
