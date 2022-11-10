@@ -83,7 +83,7 @@ const SkillWindowStyled = styled.div`
     justify-content: center;
 
     span {
-      margin-top: 10px;
+      margin-top: 5px;
       font-weight: 800;
       font-size: 25px;
       color: #ececec;

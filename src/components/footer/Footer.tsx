@@ -8,7 +8,8 @@ const Footer = () => {
       <div className="divLeft">
         <h4>KEVIN NAUDY</h4>
         <h4>
-          Développeur web React <span>Toulouse - Haute-Garonne</span>
+          Développeur web React <span>Toulouse - Haute-Garonne</span>{" "}
+          <span className="phone">+336 41 98 17 08</span>
         </h4>
       </div>
       <div>
@@ -46,7 +47,13 @@ const FooterStyled = styled.footer`
       display: flex;
       flex-direction: column;
     }
+    .phone {
+      font-family: sans-serif;
+      font-weight: 200;
+      margin-top: 3px;
+    }
   }
+
   i {
     font-size: 40px;
     margin: 0 15px 0 15px;
