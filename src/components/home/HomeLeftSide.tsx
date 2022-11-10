@@ -4,6 +4,7 @@ import { theme } from "../../theme/theme";
 import TextAnimScroll from "../../ui-reusable/TextAnimScroll";
 
 const HomeLeftSide = () => {
+  //const { ref, inView } = useInView();
   return (
     <HomeLeftSideStyled>
       <h1>
