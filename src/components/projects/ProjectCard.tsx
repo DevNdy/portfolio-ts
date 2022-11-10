@@ -36,9 +36,9 @@ const ProjectCard: React.FC<ArticleProps> = ({
 
 const ProjectCardStyled = styled.div`
   border-radius: 4px;
-  transition: 0.3s;
   margin: 15px 0 0 15px;
   cursor: pointer;
+  transition: 0.7s;
 
   &:hover {
     transform: scale(1.05);
@@ -55,8 +55,8 @@ const ProjectCardStyled = styled.div`
     background: rgba(216, 49, 91, 0.9);
     border-radius: 8px;
     color: white;
-    height: 400px;
-    width: 550px;
+    height: 250px;
+    width: 380px;
     opacity: 0;
     transform: scaleY(0);
     transition: 0.7s;
@@ -68,17 +68,19 @@ const ProjectCardStyled = styled.div`
       align-items: center;
       border-radius: 10px;
       h3 {
-        font-size: 3rem;
+        font-size: 1.5rem;
         color: white;
       }
 
       p {
-        color: white;
-        width: 400px;
+        font-size: 1rem;
+        color: #ececec;
+        width: 360px;
       }
 
       span {
-        margin-top: 40px;
+        margin-top: 10px;
+        font-size: 1rem;
         font-weight: 600;
         color: white;
         border: 1px solid white;
@@ -87,8 +89,8 @@ const ProjectCardStyled = styled.div`
     }
   }
   img {
-    height: 400px;
-    width: 550px;
+    height: 250px;
+    width: 380px;
     border-radius: 10px;
   }
 `;

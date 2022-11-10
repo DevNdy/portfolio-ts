@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import imgDev from "../../assets/images/dev.png";
 
 const HomeRightSide = () => {
+  const [hoverImg, setHoverImg] = useState<boolean>(false);
+
   return (
     <HomeRightSideStyled>
-      <img src={imgDev} alt="développeur" />
+      <img
+        onMouseEnter={() => setHoverImg(true)}
+        className={`${hoverImg ? "imgHover" : ""}`}
+        src={imgDev}
+        alt="développeur"
+      />
     </HomeRightSideStyled>
   );
 };
@@ -23,10 +30,11 @@ const HomeRightSideStyled = styled.div`
     width: 500px;
     height: 680px;
     transition: 1s;
+  }
 
-    &:hover {
-      transform: scale(0.8);
-    }
+  .imgHover {
+    transition: 2s;
+    transform: scale(0.8);
   }
 `;
 

@@ -1,12 +1,18 @@
+import firebase from "../assets/images/techno/firebase.png";
+import react from "../assets/images/techno/react.png";
+import flutter from "../assets/images/techno/flutter.png";
+import tailwind from "../assets/images/techno/tailwind.png";
+
 export const imgTech = [
-  "https://www.datocms-assets.com/45470/1631110818-logo-react-js.png",
+  react,
   "https://cdn-icons-png.flaticon.com/128/5968/5968381.png",
   "https://dyma.fr/assets/technos/htmlcss-logo-title.svg",
   "https://www.seekpng.com/png/full/377-3772047_sass-logo.png",
   "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
-  "https://purecode.sa/wp-content/uploads/flutter-logo-5086DD11C5-seeklogo.com_-e1615739022704.png",
-  "https://assets.stickpng.com/images/5847f40ecef1014c0b5e488a.png",
+  flutter,
+  firebase,
   "https://miro.medium.com/max/400/1*b7DwaOEfreG253K8Z_QzkA.png",
+  tailwind,
 ];
 
 export const imgDesign = [

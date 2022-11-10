@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import BtnSkill from "../../ui-reusable/BtnSkill";
-import SkillWindow from "../../ui-reusable/SkillWindow";
+import SkillWindow from "./SkillWindow";
 import { imgTech, imgOther, imgDesign } from "../../text/skillImg";
 import { theme } from "../../theme/theme";
+import { skills, skillTextTech, skillDesign, skillOther } from "../../text/skillText";
 
 const AboutSkills = () => {
   const [openSkill, setOpenSkill] = useState(0);
@@ -13,19 +14,25 @@ const AboutSkills = () => {
       <div className="btnSkills">
         <BtnSkill
           icon={<i className="fa-solid fa-microchip"></i>}
-          onClick={() => setOpenSkill(1)}
+          onMouseEnter={() => setOpenSkill(1)}
         />
-        <BtnSkill icon={<i className="fa-solid fa-pencil"></i>} onClick={() => setOpenSkill(2)} />
-        <BtnSkill icon={<i className="fa-solid fa-plus"></i>} onClick={() => setOpenSkill(3)} />
+        <BtnSkill
+          icon={<i className="fa-solid fa-pencil"></i>}
+          onMouseEnter={() => setOpenSkill(2)}
+        />
+        <BtnSkill
+          icon={<i className="fa-solid fa-plus"></i>}
+          onMouseEnter={() => setOpenSkill(3)}
+        />
       </div>
       {openSkill === 1 ? (
-        <SkillWindow imgSkill={imgTech} title="Technologies" />
+        <SkillWindow imgSkill={imgTech} title="Technologies" description={skillTextTech} />
       ) : openSkill === 2 ? (
-        <SkillWindow imgSkill={imgDesign} title="Design" />
+        <SkillWindow imgSkill={imgDesign} title="Design" description={skillDesign} />
       ) : openSkill === 3 ? (
-        <SkillWindow imgSkill={imgOther} title="Autres" />
+        <SkillWindow imgSkill={imgOther} title="Autres" description={skillOther} />
       ) : (
-        <span className="divSkills">Mes Skills</span>
+        <SkillWindow imgSkill={[]} title="Mes Skills" description={skills} />
       )}
     </AboutSkillsStyled>
   );
@@ -39,7 +46,7 @@ const AboutSkillsStyled = styled.div`
   justify-content: space-evenly;
 
   .btnSkills {
-    height: 400px;
+    height: 320px;
     width: 80px;
     display: flex;
     flex-direction: column;
@@ -47,7 +54,7 @@ const AboutSkillsStyled = styled.div`
   }
 
   .divSkills {
-    height: 320px;
+    height: 253px;
     width: 500px;
     margin-left: 100px;
     left: 100px;
