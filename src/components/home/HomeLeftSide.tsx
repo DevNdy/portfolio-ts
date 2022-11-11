@@ -1,12 +1,16 @@
+import { useInView } from "react-intersection-observer";
 import React from "react";
 import styled from "styled-components";
 import { theme } from "../../theme/theme";
 import TextAnimScroll from "../../ui-reusable/TextAnimScroll";
 
 const HomeLeftSide = () => {
+  const { ref, inView } = useInView();
+  const { ref: refScroll, inView: inViewScroll } = useInView();
+
   return (
     <HomeLeftSideStyled>
-      <h1>
+      <h1 ref={ref} className={`${inView ? "isVisible" : ""}`}>
         {" "}
         <span className="spanHey">{"< Hey, je suis"}</span> Kévin Naudy{" "}
         <span className="spanDev">
@@ -19,7 +23,9 @@ const HomeLeftSide = () => {
           />
         </span>
       </h1>
-      <TextAnimScroll />
+      <div ref={refScroll} className={`${inViewScroll ? "isVisible" : "divScroll"}`}>
+        <TextAnimScroll />
+      </div>
     </HomeLeftSideStyled>
   );
 };
@@ -39,7 +45,7 @@ const HomeLeftSideStyled = styled.div`
     font-size: 75px;
     display: flex;
     flex-direction: column;
-    opacity: 1;
+    opacity: 0;
     .spanHey {
       font-size: 35px;
       color: ${theme.colors.gray};
@@ -62,6 +68,15 @@ const HomeLeftSideStyled = styled.div`
         margin-left: 5px;
       }
     }
+  }
+
+  .isVisible {
+    transition: 3s;
+    opacity: 1;
+  }
+
+  .divScroll {
+    opacity: 0;
   }
 `;
 

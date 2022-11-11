@@ -1,18 +1,13 @@
-import React, { useState } from "react";
 import styled from "styled-components";
 import imgDev from "../../assets/images/dev.png";
+import { useInView } from "react-intersection-observer";
 
 const HomeRightSide = () => {
-  const [hoverImg, setHoverImg] = useState<boolean>(false);
+  const { ref, inView } = useInView();
 
   return (
     <HomeRightSideStyled>
-      <img
-        onMouseEnter={() => setHoverImg(true)}
-        className={`${hoverImg ? "imgHover" : ""}`}
-        src={imgDev}
-        alt="développeur"
-      />
+      <img ref={ref} className={`${inView ? "isVisible" : ""}`} src={imgDev} alt="développeur" />
     </HomeRightSideStyled>
   );
 };
@@ -27,14 +22,14 @@ const HomeRightSideStyled = styled.div`
 
   img {
     margin-top: 470px;
-    width: 500px;
-    height: 680px;
-    transition: 1s;
+    width: 400px;
+    height: 580px;
+    transform: scale(0);
   }
 
-  .imgHover {
+  .isVisible {
     transition: 2s;
-    transform: scale(0.8);
+    transform: scale(1);
   }
 `;
 
