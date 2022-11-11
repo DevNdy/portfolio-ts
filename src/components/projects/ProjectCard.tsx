@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { useInView } from "react-intersection-observer";
+import { theme } from "../../theme/theme";
 
 interface ArticleProps {
   img: string;
@@ -18,9 +20,10 @@ const ProjectCard: React.FC<ArticleProps> = ({
   img,
   responsive,
 }) => {
+  const { ref, inView } = useInView();
   return (
     <ProjectCardStyled onClick={onClick}>
-      <div>
+      <div ref={ref} className={`${inView ? "isVisible" : ""}`}>
         <img src={img} alt="profile" />
       </div>
       <div className="infos">
@@ -35,13 +38,18 @@ const ProjectCard: React.FC<ArticleProps> = ({
 };
 
 const ProjectCardStyled = styled.div`
-  border-radius: 4px;
-  margin: 15px 0 0 15px;
+  background-color: #f9f5f5;
+  height: 290px;
+  width: 410px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   transition: 0.7s;
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1);
     z-index: 2;
   }
   &:hover .infos {
@@ -50,8 +58,8 @@ const ProjectCardStyled = styled.div`
   }
   .infos {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 18px;
+    left: 15px;
     background: rgba(216, 49, 91, 0.9);
     border-radius: 8px;
     color: white;
@@ -88,10 +96,20 @@ const ProjectCardStyled = styled.div`
       }
     }
   }
+
+  div {
+    opacity: 0;
+  }
+
   img {
     height: 250px;
     width: 380px;
-    border-radius: 10px;
+    border-radius: 8px;
+  }
+
+  .isVisible {
+    transition: 4s;
+    opacity: 1;
   }
 `;
 

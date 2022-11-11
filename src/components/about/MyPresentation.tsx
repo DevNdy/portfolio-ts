@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Reorder } from "framer-motion";
 import { theme } from "../../theme/theme";
+import { useInView } from "react-intersection-observer";
 
 const MyPresentation = () => {
+  const { ref, inView } = useInView();
   const [items, setItems] = useState([
     "Motivé",
     "Autonome",
@@ -13,15 +15,21 @@ const MyPresentation = () => {
   ]);
   return (
     <MyPresentationStyled>
-      <p>
+      <p ref={ref} className={`${inView ? "isVisible" : ""}`}>
         Développeur Front-end React sur Toulouse. J'ai découvert la programmation web pars
         curiosité, ça a été une révélation. Suite à cela j'ai entrepris une reconversion Pro. <br />{" "}
         <br /> J'ai voyagé aussi à la découverte du mobile avec Flutter. J’aime les nouvelles
         expériences et les challenges.
       </p>
-      <Reorder.Group axis="y" values={items} onReorder={setItems}>
+      <Reorder.Group
+        axis="y"
+        values={items}
+        onReorder={setItems}
+        ref={ref}
+        className={`${inView ? "isVisible" : "reaoder"}`}
+      >
         {items.map((item) => (
-          <Reorder.Item key={item} value={item}>
+          <Reorder.Item key={item} value={item} className="">
             <span className="spanItems">{item}</span>
           </Reorder.Item>
         ))}
@@ -37,13 +45,23 @@ const MyPresentationStyled = styled.div`
   justify-content: center;
   align-items: center;
 
+  .isVisible {
+    transition: 3s;
+    opacity: 1;
+  }
+
   p {
     max-width: 500px;
     color: ${theme.colors.gray};
     font-size: 18px;
+    opacity: 0;
   }
 
   //anim atouts:
+  .reaoder {
+    opacity: 0;
+  }
+
   li {
     list-style: none;
   }
