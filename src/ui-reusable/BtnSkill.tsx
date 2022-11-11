@@ -21,26 +21,29 @@ const BtnSkill = ({ icon, onMouseEnter }: BtnSkillProps) => {
 
 const BtnSkillStyled = styled.div`
   button {
-    opacity: 0;
     height: 60px;
     width: 60px;
     padding: 5px;
-    border-radius: 10%;
+    border-radius: 50%;
     border: none;
     color: ${theme.colors.primaryColor};
     font-size: 30px;
     background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.4) 1px 2px 5px, rgba(255, 188, 230, 0.3) 1px 2px 10px,
-      rgba(3, 3, 3, 0.2) 1px 2px 2px;
+
     cursor: pointer;
     &:hover {
+      border-radius: 50%;
+      transform: rotate(0deg);
       box-shadow: none;
     }
   }
 
   .isVisible {
-    transition: 1.5s;
-    opacity: 1;
+    border-radius: 10%;
+    transition: 1s;
+    transform: rotate(180deg);
+    box-shadow: rgba(0, 0, 0, 0.4) 1px 2px 5px, rgba(255, 188, 230, 0.3) 1px 2px 10px,
+      rgba(3, 3, 3, 0.2) 1px 2px 2px;
   }
 `;
 

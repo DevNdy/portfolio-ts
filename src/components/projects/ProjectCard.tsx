@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { useInView } from "react-intersection-observer";
-import { theme } from "../../theme/theme";
 
 interface ArticleProps {
   img: string;
@@ -48,13 +47,22 @@ const ProjectCardStyled = styled.div`
   cursor: pointer;
   transition: 0.7s;
 
+  div {
+    transform: scaleX(0);
+    img {
+      height: 250px;
+      width: 380px;
+      border-radius: 8px;
+    }
+  }
+
   &:hover {
     transform: scale(1);
     z-index: 2;
   }
   &:hover .infos {
     opacity: 1;
-    transform: scaleY(1);
+    transform: scaleX(1);
   }
   .infos {
     position: absolute;
@@ -66,7 +74,7 @@ const ProjectCardStyled = styled.div`
     height: 250px;
     width: 380px;
     opacity: 0;
-    transform: scaleY(0);
+    transform: scaleX(0);
     transition: 0.7s;
 
     a {
@@ -97,19 +105,9 @@ const ProjectCardStyled = styled.div`
     }
   }
 
-  div {
-    opacity: 0;
-  }
-
-  img {
-    height: 250px;
-    width: 380px;
-    border-radius: 8px;
-  }
-
   .isVisible {
-    transition: 4s;
-    opacity: 1;
+    transition: 1s;
+    transform: scaleX(1);
   }
 `;
 

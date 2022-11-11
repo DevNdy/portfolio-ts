@@ -24,12 +24,12 @@ const HomeRightSideStyled = styled.div`
     margin-top: 470px;
     width: 400px;
     height: 580px;
-    opacity: 0;
+    transform: scale(0);
   }
 
   .isVisible {
-    transition: 5s;
-    opacity: 1;
+    transition: 2s;
+    transform: scale(1);
   }
 `;
 

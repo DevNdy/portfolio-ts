@@ -46,8 +46,9 @@ const MyPresentationStyled = styled.div`
   align-items: center;
 
   .isVisible {
-    transition: 3s;
+    transition: 1s;
     opacity: 1;
+    transform: scale(1);
   }
 
   p {
@@ -59,7 +60,7 @@ const MyPresentationStyled = styled.div`
 
   //anim atouts:
   .reaoder {
-    opacity: 0;
+    transform: scale(0);
   }
 
   li {

@@ -42,15 +42,15 @@ const SkillWindowStyled = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: 0.7s;
     opacity: 0;
+
     &:hover {
-      transform: scale(1.05);
+      transform: scale(1.01);
       z-index: 2;
     }
     &:hover .infoSkill {
       opacity: 1;
-      transform: scaleX(1);
+      transform: scaleY(1);
     }
     h3 {
       font-size: 30px;
@@ -80,7 +80,7 @@ const SkillWindowStyled = styled.div`
       height: 253px;
       width: 500px;
       opacity: 0;
-      transform: scaleX(0);
+      transform: scaleY(0);
       transition: 0.7s;
       display: flex;
       flex-direction: column;
@@ -98,7 +98,7 @@ const SkillWindowStyled = styled.div`
   }
 
   .isVisible {
-    transition: 4s;
+    transition: 3s;
     opacity: 1;
   }
 `;
