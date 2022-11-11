@@ -3,12 +3,16 @@ import styled from "styled-components";
 import { AppContext } from "../../context/Context";
 import { theme } from "../../theme/theme";
 
-const NavBarNav = () => {
+interface NavBarNavProps {
+  menu: boolean;
+}
+
+const NavBarNav = ({ menu }: NavBarNavProps) => {
   const { refHome, refProjects, refAbout, refContact } = useContext(AppContext);
 
   return (
     <NavBarNavStyled>
-      <ul>
+      <ul className={`${menu ? "menuOpen" : "menuClose"}`}>
         <li onClick={() => refHome.current.scrollIntoView({ behavior: "smooth" })}>- Accueil</li>
         <li onClick={() => refProjects.current.scrollIntoView({ behavior: "smooth" })}>
           - Mes projets
@@ -51,6 +55,57 @@ const NavBarNavStyled = styled.nav`
       &:hover {
         background-color: ${theme.colors.primaryColor};
         color: white;
+      }
+    }
+  }
+
+  @media (max-width: 1100px) {
+    position: absolute;
+    top: 6vh;
+    height: 140px;
+    width: 100%;
+
+    .menuOpen {
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      transition: 1s;
+      transform: translateY(0%);
+      border-bottom: 1px solid ${theme.colors.primaryColor};
+      background-color: white;
+      padding-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      li {
+        width: 120px;
+        font-size: 16px;
+        font-weight: 600;
+        margin: 5px 0 5px 5px;
+        opacity: 1;
+        transition: 0.3s;
+      }
+    }
+    .menuClose {
+      height: 100%;
+      width: 100%;
+      z-index: 0;
+      transition: 1s;
+      transform: translateY(-95%);
+      border-bottom: 1px solid ${theme.colors.primaryColor};
+      background-color: white;
+      padding-bottom: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      li {
+        transition: 0.5s;
+        opacity: 0;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 10px 0 0 5px;
       }
     }
   }

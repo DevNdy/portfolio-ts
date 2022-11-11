@@ -78,6 +78,35 @@ const HomeLeftSideStyled = styled.div`
   .divScroll {
     opacity: 0;
   }
+
+  @media (max-width: 1100px) {
+    width: 100vw;
+    h1 {
+      margin-left: 0;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 599px) {
+    h1 {
+      margin: 250px 0 180px 0;
+      font-size: 40px;
+      align-items: center;
+
+      .spanHey {
+        font-size: 20px;
+        color: ${theme.colors.gray};
+      }
+      .spanDev {
+        font-size: 17px;
+        align-items: center;
+
+        .ts {
+          height: 20px;
+        }
+      }
+    }
+  }
 `;
 
 export default HomeLeftSide;

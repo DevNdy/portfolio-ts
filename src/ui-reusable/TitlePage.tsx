@@ -35,6 +35,17 @@ const TitlePageStyled = styled.div`
     transition: 3s;
     opacity: 1;
   }
+
+  @media (max-width: 1100px) {
+    h2 {
+      margin: 130px 0 40px;
+      font-size: 30px;
+
+      span {
+        font-size: 30px;
+      }
+    }
+  }
 `;
 
 export default TitlePage;

@@ -55,6 +55,23 @@ const SocialNetworksWidgetStyled = styled.div`
       box-shadow: none;
     }
   }
+
+  @media (max-width: 1100px) {
+    height: 45px;
+    width: 270px;
+    top: 5px;
+    left: 10px;
+    border-left: 0.5px solid ${theme.colors.primaryColor};
+    flex-direction: row;
+    padding: 0;
+    z-index: 50;
+
+    i {
+      height: 15px;
+      width: 15px;
+      font-size: 15px;
+    }
+  }
 `;
 
 export default SocialNetworksWidget;

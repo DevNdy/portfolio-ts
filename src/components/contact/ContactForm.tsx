@@ -118,7 +118,7 @@ const ContactFormStyled = styled.div`
   }
 
   .isVisible {
-    transition: 1s;
+    transition: 1.4s;
     opacity: 1;
     transform: scale(1);
   }

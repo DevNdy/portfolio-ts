@@ -48,7 +48,7 @@ const ProjectCardStyled = styled.div`
   transition: 0.7s;
 
   div {
-    transform: scaleX(0);
+    opacity: 0;
     img {
       height: 250px;
       width: 380px;
@@ -106,8 +106,48 @@ const ProjectCardStyled = styled.div`
   }
 
   .isVisible {
-    transition: 1s;
-    transform: scaleX(1);
+    transition: 2s;
+    opacity: 1;
+  }
+
+  @media (max-width: 870px) {
+    height: 310px;
+    width: 440px;
+    div {
+      opacity: 0;
+      img {
+        height: 280px;
+        width: 400px;
+        border-radius: 8px;
+      }
+    }
+
+    .infos {
+      top: 13px;
+      left: 20px;
+      height: 280px;
+      width: 400px;
+    }
+  }
+
+  @media (max-width: 599px) {
+    height: 280px;
+    width: 370px;
+    div {
+      opacity: 0;
+      img {
+        height: 260px;
+        width: 350px;
+        border-radius: 8px;
+      }
+    }
+
+    .infos {
+      top: 13px;
+      left: 20px;
+      height: 280px;
+      width: 400px;
+    }
   }
 `;
 
