@@ -35,8 +35,6 @@ const ProjectsListStyled = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
 
   h4 {
     height: 100%;
@@ -63,8 +61,6 @@ const ProjectsListStyled = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
 
     h4 {
       font-size: 22px;
@@ -75,8 +71,6 @@ const ProjectsListStyled = styled.div`
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
   }
 `;
 

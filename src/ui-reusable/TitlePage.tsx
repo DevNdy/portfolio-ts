@@ -46,6 +46,17 @@ const TitlePageStyled = styled.div`
       }
     }
   }
+
+  @media (max-width: 599px) {
+    h2 {
+      margin: 130px 0 40px;
+      font-size: 23px;
+
+      span {
+        font-size: 23px;
+      }
+    }
+  }
 `;
 
 export default TitlePage;

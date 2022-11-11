@@ -39,7 +39,7 @@ const ProjectCard: React.FC<ArticleProps> = ({
 const ProjectCardStyled = styled.div`
   background-color: #f9f5f5;
   height: 290px;
-  width: 410px;
+  width: 380px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,7 +51,7 @@ const ProjectCardStyled = styled.div`
     opacity: 0;
     img {
       height: 250px;
-      width: 380px;
+      width: 360px;
       border-radius: 8px;
     }
   }
@@ -64,6 +64,7 @@ const ProjectCardStyled = styled.div`
     opacity: 1;
     transform: scaleX(1);
   }
+  //anim
   .infos {
     position: absolute;
     top: 18px;
@@ -131,22 +132,38 @@ const ProjectCardStyled = styled.div`
   }
 
   @media (max-width: 599px) {
-    height: 280px;
-    width: 370px;
+    height: 250px;
+    width: 340px;
     div {
       opacity: 0;
       img {
-        height: 260px;
-        width: 350px;
+        height: 220px;
+        width: 320px;
         border-radius: 8px;
       }
     }
 
     .infos {
       top: 13px;
-      left: 20px;
-      height: 280px;
-      width: 400px;
+      left: 10px;
+      height: 220px;
+      width: 320px;
+
+      a {
+        h3 {
+          margin: 10px 0 0 0;
+        }
+
+        p {
+          width: 310px;
+        }
+
+        span {
+          height: 15px;
+          font-size: 13px;
+          margin: 0;
+        }
+      }
     }
   }
 `;

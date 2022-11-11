@@ -122,6 +122,26 @@ const ContactFormStyled = styled.div`
     opacity: 1;
     transform: scale(1);
   }
+
+  @media (max-width: 599px) {
+    form {
+      input {
+        height: 25px;
+        width: 320px;
+      }
+
+      textarea {
+        width: 320px;
+      }
+
+      button {
+        width: 330px;
+      }
+    }
+    h3 {
+      font-size: 15px;
+    }
+  }
 `;
 
 export default ContactForm;

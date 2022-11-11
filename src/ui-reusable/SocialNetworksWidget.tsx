@@ -47,8 +47,7 @@ const SocialNetworksWidgetStyled = styled.div`
     color: ${theme.colors.primaryColor};
     font-size: 30px;
     background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 5px, rgba(255, 188, 230, 0.3) 2px 2px 10px,
-      rgba(3, 3, 3, 0.2) 2px 2px 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 1px 5px 5px, rgba(201, 201, 201, 0.3) 1px 1px 10px;
     cursor: pointer;
     transition: 0.8s;
     &:hover {
@@ -59,7 +58,7 @@ const SocialNetworksWidgetStyled = styled.div`
   @media (max-width: 1100px) {
     height: 45px;
     width: 270px;
-    top: 5px;
+    top: 10px;
     left: 10px;
     border-left: 0.5px solid ${theme.colors.primaryColor};
     flex-direction: row;

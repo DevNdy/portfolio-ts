@@ -124,13 +124,17 @@ const SkillWindowStyled = styled.div`
   @media (max-width: 599px) {
     margin-left: 0;
     span {
-      width: 370px;
+      width: 350px;
 
       .infoSkill {
-        width: 370px;
+        width: 350px;
+
+        h3 {
+          font-size: 20px;
+        }
       }
       .divImg {
-        max-width: 370px;
+        max-width: 350px;
         img {
           height: 25px;
           width: 25px;

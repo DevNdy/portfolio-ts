@@ -61,13 +61,16 @@ const NavBarNavStyled = styled.nav`
 
   @media (max-width: 1100px) {
     position: absolute;
-    top: 6vh;
+    top: 7vh;
+    left: 0;
     height: 140px;
-    width: 100%;
+    width: 100vw;
+    max-width: 100vw;
 
     .menuOpen {
       height: 100%;
-      width: 100%;
+      width: 99vw;
+      max-width: 100vw;
       z-index: -1;
       transition: 1s;
       transform: translateY(0%);
@@ -77,6 +80,7 @@ const NavBarNavStyled = styled.nav`
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
 
       li {
         width: 120px;
@@ -89,7 +93,8 @@ const NavBarNavStyled = styled.nav`
     }
     .menuClose {
       height: 100%;
-      width: 100%;
+      width: 99vw;
+      max-width: 100vw;
       z-index: 0;
       transition: 1s;
       transform: translateY(-95%);

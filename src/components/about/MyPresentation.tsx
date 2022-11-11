@@ -104,6 +104,21 @@ const MyPresentationStyled = styled.div`
       padding: 2px;
     }
   }
+
+  @media (max-width: 599px) {
+    flex-direction: column;
+
+    p {
+      max-width: 360px;
+      font-size: 15px;
+    }
+
+    .spanItems {
+      width: 110px;
+      margin: 3px 5px 0 5px;
+      padding: 2px;
+    }
+  }
 `;
 
 export default MyPresentation;

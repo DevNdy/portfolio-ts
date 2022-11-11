@@ -35,6 +35,7 @@ const NavBar = () => {
 const NavBarStyled = styled.header`
   position: fixed;
   top: 0;
+  right: 0;
   height: 4rem;
   width: 100vw;
   background-color: white;
@@ -48,7 +49,6 @@ const NavBarStyled = styled.header`
   .iPhone {
     width: 9rem;
     height: 2.9rem;
-    margin-right: 10px;
     padding-top: 20px;
     color: ${theme.colors.gray};
     font-size: 25px;
@@ -77,12 +77,13 @@ const NavBarStyled = styled.header`
   }
 
   @media (max-width: 1100px) {
-    width: 100%;
+    max-width: 100vw;
+    width: 100vw;
     padding: 0;
     border-bottom: 0;
 
     span {
-      width: 100%;
+      width: 100vw;
       text-align: end;
       z-index: 30;
       i {
