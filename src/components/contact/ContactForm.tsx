@@ -118,9 +118,32 @@ const ContactFormStyled = styled.div`
   }
 
   .isVisible {
-    transition: 1s;
+    transition: 1.4s;
     opacity: 1;
     transform: scale(1);
+  }
+
+  @media (max-width: 599px) {
+    form {
+      input {
+        height: 25px;
+        width: 315px;
+      }
+
+      textarea {
+        width: 315px;
+        &::placeholder {
+          font-size: 14px;
+        }
+      }
+
+      button {
+        width: 328px;
+      }
+    }
+    h3 {
+      font-size: 15px;
+    }
   }
 `;
 

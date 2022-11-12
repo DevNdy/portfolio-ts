@@ -39,7 +39,7 @@ const ProjectCard: React.FC<ArticleProps> = ({
 const ProjectCardStyled = styled.div`
   background-color: #f9f5f5;
   height: 290px;
-  width: 410px;
+  width: 380px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,10 +48,10 @@ const ProjectCardStyled = styled.div`
   transition: 0.7s;
 
   div {
-    transform: scaleX(0);
+    opacity: 0;
     img {
       height: 250px;
-      width: 380px;
+      width: 360px;
       border-radius: 8px;
     }
   }
@@ -64,15 +64,16 @@ const ProjectCardStyled = styled.div`
     opacity: 1;
     transform: scaleX(1);
   }
+  //anim
   .infos {
     position: absolute;
     top: 18px;
-    left: 15px;
+    left: 10px;
     background: rgba(216, 49, 91, 0.9);
     border-radius: 8px;
     color: white;
     height: 250px;
-    width: 380px;
+    width: 360px;
     opacity: 0;
     transform: scaleX(0);
     transition: 0.7s;
@@ -106,8 +107,64 @@ const ProjectCardStyled = styled.div`
   }
 
   .isVisible {
-    transition: 1s;
-    transform: scaleX(1);
+    transition: 2s;
+    opacity: 1;
+  }
+
+  @media (max-width: 870px) {
+    height: 310px;
+    width: 440px;
+    div {
+      opacity: 0;
+      img {
+        height: 280px;
+        width: 400px;
+        border-radius: 8px;
+      }
+    }
+
+    .infos {
+      top: 13px;
+      left: 20px;
+      height: 280px;
+      width: 400px;
+    }
+  }
+
+  @media (max-width: 599px) {
+    height: 250px;
+    width: 340px;
+    div {
+      opacity: 0;
+      img {
+        height: 220px;
+        width: 320px;
+        border-radius: 8px;
+      }
+    }
+
+    .infos {
+      top: 13px;
+      left: 10px;
+      height: 220px;
+      width: 320px;
+
+      a {
+        h3 {
+          margin: 10px 0 0 0;
+        }
+
+        p {
+          width: 310px;
+        }
+
+        span {
+          height: 15px;
+          font-size: 13px;
+          margin: 0;
+        }
+      }
+    }
   }
 `;
 

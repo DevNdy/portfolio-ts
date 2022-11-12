@@ -3,9 +3,11 @@ import styled from "styled-components";
 import { Reorder } from "framer-motion";
 import { theme } from "../../theme/theme";
 import { useInView } from "react-intersection-observer";
+import { useMediaQuery } from "react-responsive";
 
 const MyPresentation = () => {
   const { ref, inView } = useInView();
+  const { ref: refItems, inView: inViewItems } = useInView();
   const [items, setItems] = useState([
     "Motivé",
     "Autonome",
@@ -25,11 +27,11 @@ const MyPresentation = () => {
         axis="y"
         values={items}
         onReorder={setItems}
-        ref={ref}
-        className={`${inView ? "isVisible" : "reaoder"}`}
+        ref={refItems}
+        className={`${inViewItems ? "isVisible" : "reaoder"}`}
       >
         {items.map((item) => (
-          <Reorder.Item key={item} value={item} className="">
+          <Reorder.Item key={item} value={item}>
             <span className="spanItems">{item}</span>
           </Reorder.Item>
         ))}
@@ -86,6 +88,27 @@ const MyPresentationStyled = styled.div`
     &:hover {
       background-color: ${theme.colors.primaryColor};
       color: white;
+    }
+  }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+
+    p {
+      max-width: 460px;
+    }
+
+    .spanItems {
+      width: 110px;
+      margin: 3px 55px 0 5px;
+      padding: 2px;
+    }
+  }
+
+  @media (max-width: 599px) {
+    p {
+      max-width: 330px;
+      font-size: 15px;
     }
   }
 `;

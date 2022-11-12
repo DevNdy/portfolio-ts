@@ -30,6 +30,10 @@ const TextAnimScrollStyled = styled.div`
       background-position: 200% center;
     }
   }
+
+  @media (max-width: 599px) {
+    margin-left: 0;
+  }
 `;
 
 export default TextAnimScroll;

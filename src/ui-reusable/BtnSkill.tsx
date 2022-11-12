@@ -42,8 +42,14 @@ const BtnSkillStyled = styled.div`
     border-radius: 10%;
     transition: 1s;
     transform: rotate(180deg);
-    box-shadow: rgba(0, 0, 0, 0.4) 1px 2px 5px, rgba(255, 188, 230, 0.3) 1px 2px 10px,
-      rgba(3, 3, 3, 0.2) 1px 2px 2px;
+    box-shadow: rgba(0, 0, 0, 0.4) -1px -5px 1px, rgba(201, 201, 201, 0.3) 1px 1px 1px;
+  }
+
+  @media (max-width: 599px) {
+    button {
+      height: 40px;
+      width: 40px;
+    }
   }
 `;
 

@@ -39,7 +39,7 @@ const AboutSkills = () => {
 };
 
 const AboutSkillsStyled = styled.div`
-  min-width: 600px;
+  width: 600px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -53,19 +53,30 @@ const AboutSkillsStyled = styled.div`
     justify-content: space-evenly;
   }
 
-  .divSkills {
-    height: 253px;
-    width: 500px;
-    margin-left: 100px;
-    left: 100px;
-    background-color: #f4f3f3;
-    border-radius: 12px;
-    font-size: 35px;
-    color: ${theme.colors.gray};
-    display: flex;
+  @media (max-width: 800px) {
+    margin-top: 10px;
+    height: 380px;
+    width: 460px;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    .btnSkills {
+      height: 60px;
+      width: 400px;
+      flex-direction: row;
+    }
+  }
+
+  @media (max-width: 599px) {
+    margin-top: 10px;
+    height: 380px;
+    width: 360px;
+    flex-direction: column;
+    align-items: center;
+    .btnSkills {
+      height: 60px;
+      width: 350px;
+      flex-direction: row;
+    }
   }
 `;
 

@@ -101,6 +101,47 @@ const SkillWindowStyled = styled.div`
     transition: 3s;
     opacity: 1;
   }
+
+  @media (max-width: 800px) {
+    margin-left: 0;
+    span {
+      width: 470px;
+
+      .infoSkill {
+        width: 470px;
+      }
+
+      .divImg {
+        max-width: 470px;
+        img {
+          height: 30px;
+          width: 30px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 599px) {
+    margin-left: 0;
+    span {
+      width: 330px;
+
+      .infoSkill {
+        width: 330px;
+
+        h3 {
+          font-size: 20px;
+        }
+      }
+      .divImg {
+        max-width: 330px;
+        img {
+          height: 27px;
+          width: 27px;
+        }
+      }
+    }
+  }
 `;
 
 export default SkillWindow;

@@ -12,7 +12,7 @@ const Footer = () => {
           <span className="phone">+336 41 98 17 08</span>
         </h4>
       </div>
-      <div>
+      <div className="icons">
         <a href="https://github.com/DevNdy" target="_blank" rel="noreferrer">
           <i className="fa-brands fa-github iGitHub"></i>
         </a>
@@ -75,6 +75,23 @@ const FooterStyled = styled.footer`
     color: white;
     &:hover {
       color: black;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .divLeft {
+      margin-left: 10px;
+    }
+
+    .icons {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      i {
+        font-size: 25px;
+      }
     }
   }
 `;

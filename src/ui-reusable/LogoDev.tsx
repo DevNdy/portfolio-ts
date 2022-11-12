@@ -13,7 +13,7 @@ const LogoDev = () => {
 const LogoDevStyled = styled.span`
   height: 2.2rem;
   width: 7rem;
-  padding: 30px 10px 0 10px;
+  padding: 30px 10px 0 20px;
   border-right: 0.5px solid ${theme.colors.primaryColor};
   font-size: 22px;
   font-weight: 700;
