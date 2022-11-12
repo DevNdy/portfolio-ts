@@ -68,12 +68,12 @@ const ProjectCardStyled = styled.div`
   .infos {
     position: absolute;
     top: 18px;
-    left: 15px;
+    left: 10px;
     background: rgba(216, 49, 91, 0.9);
     border-radius: 8px;
     color: white;
     height: 250px;
-    width: 380px;
+    width: 360px;
     opacity: 0;
     transform: scaleX(0);
     transition: 0.7s;
