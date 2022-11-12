@@ -109,7 +109,7 @@ const MyPresentationStyled = styled.div`
     flex-direction: column;
 
     p {
-      max-width: 360px;
+      max-width: 330px;
       font-size: 15px;
     }
 

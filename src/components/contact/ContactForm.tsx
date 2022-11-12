@@ -127,15 +127,18 @@ const ContactFormStyled = styled.div`
     form {
       input {
         height: 25px;
-        width: 320px;
+        width: 315px;
       }
 
       textarea {
-        width: 320px;
+        width: 315px;
+        &::placeholder {
+          font-size: 14px;
+        }
       }
 
       button {
-        width: 330px;
+        width: 328px;
       }
     }
     h3 {

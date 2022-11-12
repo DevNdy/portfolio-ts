@@ -72,6 +72,12 @@ const ProjectsListStyled = styled.div`
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
+
+  @media (max-width: 599px) {
+    h4 {
+      font-size: 18px;
+    }
+  }
 `;
 
 export default ProjectsList;

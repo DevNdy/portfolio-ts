@@ -56,19 +56,19 @@ const SocialNetworksWidgetStyled = styled.div`
   }
 
   @media (max-width: 1100px) {
-    height: 45px;
+    height: 55px;
     width: 270px;
-    top: 10px;
+    top: 0px;
     left: 10px;
-    border-left: 0.5px solid ${theme.colors.primaryColor};
+    border: none;
     flex-direction: row;
     padding: 0;
     z-index: 50;
 
     i {
-      height: 15px;
-      width: 15px;
-      font-size: 15px;
+      height: 13px;
+      width: 13px;
+      font-size: 14px;
     }
   }
 `;

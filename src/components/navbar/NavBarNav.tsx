@@ -83,6 +83,8 @@ const NavBarNavStyled = styled.nav`
       align-items: center;
 
       li {
+        position: relative;
+        left: -30px;
         width: 120px;
         font-size: 16px;
         font-weight: 600;
@@ -92,6 +94,8 @@ const NavBarNavStyled = styled.nav`
       }
     }
     .menuClose {
+      position: relative;
+      left: -30px;
       height: 100%;
       width: 99vw;
       max-width: 100vw;
@@ -113,6 +117,10 @@ const NavBarNavStyled = styled.nav`
         margin: 10px 0 0 5px;
       }
     }
+  }
+
+  @media (max-width: 599px) {
+    top: 8vh;
   }
 `;
 
