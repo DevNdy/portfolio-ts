@@ -6,8 +6,8 @@ import { useInView } from "react-intersection-observer";
 import { useMediaQuery } from "react-responsive";
 
 const MyPresentation = () => {
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 800px)" });
   const { ref, inView } = useInView();
+  const { ref: refItems, inView: inViewItems } = useInView();
   const [items, setItems] = useState([
     "Motivé",
     "Autonome",
@@ -27,8 +27,8 @@ const MyPresentation = () => {
         axis="y"
         values={items}
         onReorder={setItems}
-        ref={ref}
-        className={`${inView ? "isVisible" : "reaoder"}`}
+        ref={refItems}
+        className={`${inViewItems ? "isVisible" : "reaoder"}`}
       >
         {items.map((item) => (
           <Reorder.Item key={item} value={item}>
@@ -100,23 +100,15 @@ const MyPresentationStyled = styled.div`
 
     .spanItems {
       width: 110px;
-      margin: 3px 5px 0 5px;
+      margin: 3px 55px 0 5px;
       padding: 2px;
     }
   }
 
   @media (max-width: 599px) {
-    flex-direction: column;
-
     p {
       max-width: 330px;
       font-size: 15px;
-    }
-
-    .spanItems {
-      width: 110px;
-      margin: 3px 5px 0 5px;
-      padding: 2px;
     }
   }
 `;

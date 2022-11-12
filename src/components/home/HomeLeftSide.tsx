@@ -89,7 +89,7 @@ const HomeLeftSideStyled = styled.div`
 
   @media (max-width: 599px) {
     h1 {
-      margin: 200px 0 170px 0;
+      margin: 150px 0 180px 0;
       font-size: 40px;
       align-items: center;
 

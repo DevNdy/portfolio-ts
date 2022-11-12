@@ -60,15 +60,15 @@ const NavBarNavStyled = styled.nav`
   }
 
   @media (max-width: 1100px) {
-    position: absolute;
-    top: 7vh;
-    left: 0;
-    height: 140px;
     width: 100vw;
     max-width: 100vw;
 
     .menuOpen {
-      height: 100%;
+      position: absolute;
+      top: 7vh;
+      top: 60px;
+      left: 0;
+      height: 140px;
       width: 99vw;
       max-width: 100vw;
       z-index: -1;
@@ -84,7 +84,7 @@ const NavBarNavStyled = styled.nav`
 
       li {
         position: relative;
-        left: -30px;
+        left: -40px;
         width: 120px;
         font-size: 16px;
         font-weight: 600;
@@ -94,9 +94,10 @@ const NavBarNavStyled = styled.nav`
       }
     }
     .menuClose {
-      position: relative;
-      left: -30px;
-      height: 100%;
+      position: absolute;
+      top: 7vh;
+      left: 0;
+      height: 140px;
       width: 99vw;
       max-width: 100vw;
       z-index: 0;
@@ -110,6 +111,8 @@ const NavBarNavStyled = styled.nav`
       justify-content: center;
       align-items: center;
       li {
+        position: relative;
+        left: -40px;
         transition: 0.5s;
         opacity: 0;
         font-size: 16px;
@@ -117,10 +120,6 @@ const NavBarNavStyled = styled.nav`
         margin: 10px 0 0 5px;
       }
     }
-  }
-
-  @media (max-width: 599px) {
-    top: 8vh;
   }
 `;
 
