@@ -2,11 +2,9 @@ import React, { useRef } from "react";
 import styled from "styled-components";
 import { theme } from "../../theme/theme";
 import emailjs from "@emailjs/browser";
-import { useInView } from "react-intersection-observer";
 
 const ContactForm = () => {
   const form = useRef<any>(null);
-  const { ref, inView } = useInView();
 
   const sendEmail = (e: any) => {
     e.preventDefault();
@@ -24,7 +22,7 @@ const ContactForm = () => {
   };
   return (
     <ContactFormStyled>
-      <form ref={form && ref} onSubmit={sendEmail} className={`${inView ? "isVisible" : ""}`}>
+      <form ref={form} onSubmit={sendEmail}>
         <input type="text" placeholder="Quel est votre nom?" name="user_name" required />
         <input type="email" placeholder="Quel est votre email?" name="user_email" required />
         <textarea
@@ -35,7 +33,6 @@ const ContactForm = () => {
           required
         />
         <button>envoyer le message</button>
-
         <h3>
           <span>ou</span>
           developpeur.ndy@gmail.com
@@ -52,7 +49,6 @@ const ContactFormStyled = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    transform: scale(0);
 
     input {
       height: 25px;
@@ -115,12 +111,6 @@ const ContactFormStyled = styled.div`
         font-weight: 100;
       }
     }
-  }
-
-  .isVisible {
-    transition: 1.4s;
-    opacity: 1;
-    transform: scale(1);
   }
 
   @media (max-width: 599px) {

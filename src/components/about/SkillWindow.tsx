@@ -74,7 +74,7 @@ const SkillWindowStyled = styled.div`
       position: absolute;
       top: 0;
       left: 0;
-      background: rgba(216, 49, 91, 0.9);
+      background: rgba(212, 9, 60, 0.958);
       border-radius: 8px;
       color: white;
       height: 253px;
@@ -88,9 +88,9 @@ const SkillWindowStyled = styled.div`
       justify-content: center;
 
       h3 {
-        margin: 0;
+        margin: 10px 0 0 0;
         font-weight: 800;
-        font-size: 25px;
+        font-size: 17px;
         color: #ececec;
         opacity: 1;
       }
@@ -128,10 +128,6 @@ const SkillWindowStyled = styled.div`
 
       .infoSkill {
         width: 330px;
-
-        h3 {
-          font-size: 20px;
-        }
       }
       .divImg {
         max-width: 330px;

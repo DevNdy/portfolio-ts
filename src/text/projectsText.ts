@@ -3,6 +3,8 @@ import immoImg from "../assets/images/immo.png";
 import portfolioImg from "../assets/images/portfolio.png";
 import christmasImg from "../assets/images/christmas.png";
 import infosImg from "../assets/images/infos.png";
+import moodImg from "../assets/images/mood.png";
+import eatImg from "../assets/images/eat.png";
 
 export interface ProjectsProps {
   id: number;
@@ -16,6 +18,24 @@ export interface ProjectsProps {
 export const projects = [
   {
     id: 1,
+    name: "Mood",
+    description:
+      "Enregistrez chaque jour votre humeur, suivez son évolution. Réalisé avec React, Typescript et firebase. ",
+    url: "https://mood-devndy.vercel.app/",
+    img: moodImg,
+    responsive: true,
+  },
+  {
+    id: 2,
+    name: "What to eat?",
+    description:
+      "Vous ne savez pas quoi manger? Peut être que cette application web vous donnera de l'inspiration...",
+    url: "https://what-to-eat-devndy.vercel.app/",
+    img: eatImg,
+    responsive: true,
+  },
+  {
+    id: 3,
     name: "CryptoFinance",
     description:
       "Web app sur les cryptomonnaies, suivie du cours du bitcoin et des altcoins. Réalisé avec React js => chart js, axios (API), context, react-router v6, tailwind.",
@@ -24,7 +44,7 @@ export const projects = [
     responsive: false,
   },
   {
-    id: 2,
+    id: 4,
     name: "Immobillier 3D",
     description:
       "Web app avec l'utilisation de Spline. Réalisé avec React js, typescript, styled-components.",
@@ -33,29 +53,11 @@ export const projects = [
     responsive: true,
   },
   {
-    id: 3,
-    name: "Merry Christmas ",
-    description:
-      "Web app sur le thème de noël, timer avant je jour J. Possibilité d'écrire une lettre au père noël, mini-jeu. Réalisé avec React js, typescript , context, react-router v6, styled-components.",
-    url: "https://portfolio-ndy-devndy.vercel.app/",
-    img: christmasImg,
-    responsive: false,
-  },
-  {
-    id: 4,
+    id: 5,
     name: "Portfolio Gen.1 ",
     description: "La première version de mon portfolio à mes débuts sur React.",
     url: "https://portfolio-ndy-devndy.vercel.app/",
     img: portfolioImg,
     responsive: true,
-  },
-  {
-    id: 5,
-    name: "Infos API ",
-    description:
-      "Web app sur l'actualité, authentification avec firebase. Réalisé avec React js, typescript, axios (API), context, react-router v6, styled-components, firebase.",
-    url: "https://portfolio-ndy-devndy.vercel.app/",
-    img: infosImg,
-    responsive: false,
   },
 ];

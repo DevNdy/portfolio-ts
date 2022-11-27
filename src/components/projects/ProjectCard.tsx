@@ -69,7 +69,7 @@ const ProjectCardStyled = styled.div`
     position: absolute;
     top: 18px;
     left: 10px;
-    background: rgba(216, 49, 91, 0.9);
+    background: rgba(212, 9, 60, 0.958);
     border-radius: 8px;
     color: white;
     height: 250px;
@@ -92,7 +92,7 @@ const ProjectCardStyled = styled.div`
       p {
         font-size: 1rem;
         color: #ececec;
-        width: 360px;
+        width: 340px;
       }
 
       span {
