@@ -1,8 +1,6 @@
 import cryptoImg from "../assets/images/crypto.png";
 import immoImg from "../assets/images/immo.png";
 import portfolioImg from "../assets/images/portfolio.png";
-import christmasImg from "../assets/images/christmas.png";
-import infosImg from "../assets/images/infos.png";
 import moodImg from "../assets/images/mood.png";
 import eatImg from "../assets/images/eat.png";
 
