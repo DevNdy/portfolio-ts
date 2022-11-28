@@ -12,7 +12,7 @@ import ts from "../assets/images/techno/ts.png";
 import sass from "../assets/images/techno/sass.png";
 import js from "../assets/images/techno/js.png";
 import npm from "../assets/images/techno/npm.png";
-import figma from "../assets/images/techno/ts.png";
+import figma from "../assets/images/techno/figma.png";
 import dribble from "../assets/images/techno/dribble.png";
 import spline from "../assets/images/techno/spline.png";
 import git from "../assets/images/techno/git.png";
