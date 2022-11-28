@@ -18,10 +18,10 @@ const MyPresentation = () => {
   return (
     <MyPresentationStyled>
       <p ref={ref} className={`${inView ? "isVisible" : ""}`}>
-        Développeur Front-end React sur Toulouse. J'ai découvert la programmation web pars
-        curiosité, ça a été une révélation. Suite à cela j'ai entrepris une reconversion Pro. <br />{" "}
-        <br /> J'ai voyagé aussi à la découverte du mobile avec Flutter. J’aime les nouvelles
-        expériences et les challenges.
+        Développeur Front-end React sur Toulouse. J'ai découvert la programmation web par curiosité,
+        ça a été une révélation. Suite à cela j'ai entrepris une reconversion Pro. <br /> <br />{" "}
+        J'ai voyagé aussi à la découverte du mobile avec Flutter. J’aime les nouvelles expériences
+        et les challenges.
       </p>
       <Reorder.Group
         axis="y"
@@ -102,6 +102,7 @@ const MyPresentationStyled = styled.div`
       width: 110px;
       margin: 3px 55px 0 5px;
       padding: 2px;
+      font-size: 12px;
     }
   }
 
@@ -109,6 +110,10 @@ const MyPresentationStyled = styled.div`
     p {
       max-width: 330px;
       font-size: 15px;
+    }
+
+    .spanItems {
+      width: 140px;
     }
   }
 `;

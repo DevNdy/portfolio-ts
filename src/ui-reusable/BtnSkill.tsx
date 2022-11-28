@@ -29,6 +29,10 @@ const BtnSkillStyled = styled.div`
     color: ${theme.colors.primaryColor};
     font-size: 30px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     cursor: pointer;
     &:hover {

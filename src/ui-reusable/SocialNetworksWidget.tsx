@@ -56,7 +56,7 @@ const SocialNetworksWidgetStyled = styled.div`
   }
 
   @media (max-width: 1100px) {
-    height: 55px;
+    height: 50px;
     width: 270px;
     top: 0px;
     left: 10px;

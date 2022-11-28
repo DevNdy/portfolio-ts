@@ -65,7 +65,7 @@ const NavBarNavStyled = styled.nav`
 
     .menuOpen {
       position: absolute;
-      top: 7vh;
+      top: 6.7vh;
       top: 60px;
       left: 0;
       height: 140px;
@@ -95,7 +95,7 @@ const NavBarNavStyled = styled.nav`
     }
     .menuClose {
       position: absolute;
-      top: 7vh;
+      top: 6.7vh;
       left: 0;
       height: 140px;
       width: 99vw;
