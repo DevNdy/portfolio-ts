@@ -37,7 +37,7 @@ export const projects = [
     name: "CryptoFinance",
     description:
       "Web app sur les cryptomonnaies, suivie du cours du bitcoin et des altcoins. Réalisé avec React js => chart js, axios (API), context, react-router v6, tailwind.",
-    url: "https://cryptos-tailwind-tsx.vercel.app/",
+    url: "https://cryptos-tailwind-tsx-devndy.vercel.app/",
     img: cryptoImg,
     responsive: false,
   },
