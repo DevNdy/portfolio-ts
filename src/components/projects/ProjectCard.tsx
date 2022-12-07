@@ -77,6 +77,9 @@ const ProjectCardStyled = styled.div`
     opacity: 0;
     transform: scaleX(0);
     transition: 0.7s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     a {
       text-decoration: none;

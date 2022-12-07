@@ -3,6 +3,7 @@ import immoImg from "../assets/images/immo.png";
 import portfolioImg from "../assets/images/portfolio.png";
 import moodImg from "../assets/images/mood.png";
 import eatImg from "../assets/images/eat.png";
+import fastFood from "../assets/images/fast-food.png";
 
 export interface ProjectsProps {
   id: number;
@@ -25,6 +26,14 @@ export const projects = [
   },
   {
     id: 2,
+    name: "Fast-Food",
+    description: "Commander, gerer avec un mode admin les articles (ajouter ou editer)",
+    url: "https://fast-food-lake.vercel.app/",
+    img: fastFood,
+    responsive: true,
+  },
+  {
+    id: 3,
     name: "What to eat?",
     description:
       "Vous ne savez pas quoi manger? Peut être que cette application web vous donnera de l'inspiration...",
@@ -33,7 +42,7 @@ export const projects = [
     responsive: true,
   },
   {
-    id: 3,
+    id: 4,
     name: "CryptoFinance",
     description:
       "Web app sur les cryptomonnaies, suivie du cours du bitcoin et des altcoins. Réalisé avec React js => chart js, axios (API), context, react-router v6, tailwind.",
@@ -42,7 +51,7 @@ export const projects = [
     responsive: false,
   },
   {
-    id: 4,
+    id: 5,
     name: "Immobillier 3D",
     description:
       "Web app avec l'utilisation de Spline. Réalisé avec React js, typescript, styled-components.",
@@ -51,7 +60,7 @@ export const projects = [
     responsive: true,
   },
   {
-    id: 5,
+    id: 6,
     name: "Portfolio Gen.1 ",
     description: "La première version de mon portfolio à mes débuts sur React.",
     url: "https://portfolio-ndy-devndy.vercel.app/",
