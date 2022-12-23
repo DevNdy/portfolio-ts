@@ -27,10 +27,11 @@ export const projects = [
   {
     id: 2,
     name: "Fast-Food",
-    description: "Commander, gerer avec un mode admin les articles (ajouter ou editer)",
+    description:
+      'Commander, gerer avec un mode admin les articles (ajouter ou editer). Réalisé pour écran 13" min.',
     url: "https://fast-food-lake.vercel.app/",
     img: fastFood,
-    responsive: true,
+    responsive: false,
   },
   {
     id: 3,
@@ -57,14 +58,6 @@ export const projects = [
       "Web app avec l'utilisation de Spline. Réalisé avec React js, typescript, styled-components.",
     url: "https://immobilier-react-devndy.vercel.app/",
     img: immoImg,
-    responsive: true,
-  },
-  {
-    id: 6,
-    name: "Portfolio Gen.1 ",
-    description: "La première version de mon portfolio à mes débuts sur React.",
-    url: "https://portfolio-ndy-devndy.vercel.app/",
-    img: portfolioImg,
     responsive: true,
   },
 ];
