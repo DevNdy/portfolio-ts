@@ -9,6 +9,7 @@ interface TitleProps {
 
 const TitlePage = ({ title }: TitleProps) => {
   const { ref, inView } = useInView();
+
   return (
     <TitlePageStyled>
       <h2 ref={ref} className={`${inView ? "isVisible" : ""}`}>

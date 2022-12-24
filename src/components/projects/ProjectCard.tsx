@@ -20,6 +20,7 @@ const ProjectCard: React.FC<ArticleProps> = ({
   responsive,
 }) => {
   const { ref, inView } = useInView();
+
   return (
     <ProjectCardStyled onClick={onClick}>
       <div ref={ref} className={`${inView ? "isVisible" : ""}`}>

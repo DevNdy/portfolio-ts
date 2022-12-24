@@ -7,7 +7,7 @@ export const skillTextTech = [
   "- React Router v6",
 ];
 
-export const skillDesign = ["- Figma/Xd", "- Dribbble/Pinterest", "- Spline (3D)"];
+export const skillDesign = ["- Figma/Xd", "- Canva", "- Dribbble/Pinterest", "- Spline (3D)"];
 
 export const skillOther = ["- Git/GitHub", "- Vs code", "- Ios(MacBook)/Windows", "- Android"];
 

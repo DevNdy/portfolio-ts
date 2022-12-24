@@ -81,7 +81,7 @@ const SkillWindowStyled = styled.div`
       width: 500px;
       opacity: 0;
       transform: scaleY(0);
-      transition: 0.7s;
+      transition: 0.4s;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -90,8 +90,8 @@ const SkillWindowStyled = styled.div`
       h3 {
         margin: 10px 0 0 0;
         font-weight: 800;
-        font-size: 17px;
-        color: #ececec;
+        font-size: 22px;
+        color: #f7f4eb;
         opacity: 1;
       }
     }
@@ -109,6 +109,10 @@ const SkillWindowStyled = styled.div`
 
       .infoSkill {
         width: 470px;
+
+        h3 {
+          font-size: 18px;
+        }
       }
 
       .divImg {

@@ -8,6 +8,7 @@ import { useMediaQuery } from "react-responsive";
 const NavBar = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1100px)" });
   const [menu, setMenu] = useState<boolean>(false);
+
   return (
     <NavBarStyled>
       {isTabletOrMobile ? <></> : <LogoDev />}
@@ -25,7 +26,7 @@ const NavBar = () => {
         </span>
       ) : (
         <i className="fa-solid fa-phone iPhone">
-          <span className="spanAnim">+336 41 98 17 08</span>
+          <span className="spanAnim">+33 6 41 98 17 08</span>
         </i>
       )}
     </NavBarStyled>

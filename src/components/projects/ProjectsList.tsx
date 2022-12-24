@@ -8,6 +8,7 @@ import { useInView } from "react-intersection-observer";
 
 const ProjectsList = () => {
   const { ref, inView } = useInView();
+
   return (
     <ProjectsListStyled>
       {projects.map((e: ProjectsProps) => (

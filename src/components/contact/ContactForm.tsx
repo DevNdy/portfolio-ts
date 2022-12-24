@@ -4,21 +4,24 @@ import { theme } from "../../theme/theme";
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
-  const form = useRef<any>(null);
+  const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e: any) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    emailjs.sendForm("service_8zow4ce", "template_b5y1a24", form.current, "jFtQIu6lpPKsGjR1Y").then(
-      (result) => {
-        console.log(result.text);
-        alert("Votre message a bien été envoyé! Merci d'avoir visité mon portfolio, à bientôt.");
-        e.target.reset();
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
+    emailjs
+      .sendForm("service_8zow4ce", "template_b5y1a24", form.current!, "jFtQIu6lpPKsGjR1Y")
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Votre message a bien été envoyé! Merci d'avoir visité mon portfolio, à bientôt.");
+          const resetForm = e.target as HTMLFormElement;
+          resetForm.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
   return (
     <ContactFormStyled>

@@ -1,6 +1,5 @@
 import cryptoImg from "../assets/images/crypto.png";
 import immoImg from "../assets/images/immo.png";
-import portfolioImg from "../assets/images/portfolio.png";
 import moodImg from "../assets/images/mood.png";
 import eatImg from "../assets/images/eat.png";
 import fastFood from "../assets/images/fast-food.png";
@@ -28,7 +27,7 @@ export const projects = [
     id: 2,
     name: "Fast-Food",
     description:
-      'Commander, gerer avec un mode admin les articles (ajouter ou editer). Réalisé pour écran 13" min.',
+      '<< En cour de réalisation >> Création from scratch d"une application de restauration rapide. Réalisé pour écran 13" min. ',
     url: "https://fast-food-lake.vercel.app/",
     img: fastFood,
     responsive: false,

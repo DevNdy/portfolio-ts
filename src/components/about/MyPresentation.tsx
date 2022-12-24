@@ -3,25 +3,28 @@ import styled from "styled-components";
 import { Reorder } from "framer-motion";
 import { theme } from "../../theme/theme";
 import { useInView } from "react-intersection-observer";
-import { useMediaQuery } from "react-responsive";
 
 const MyPresentation = () => {
   const { ref, inView } = useInView();
   const { ref: refItems, inView: inViewItems } = useInView();
   const [items, setItems] = useState([
     "Motivé",
+    "Passionné",
     "Autonome",
-    "Esprit d'équipe",
-    "Ambitieux",
-    "Patient",
+    "Autodidacte",
+    "Persévèrent",
+    "Clean Code",
   ]);
   return (
     <MyPresentationStyled>
       <p ref={ref} className={`${inView ? "isVisible" : ""}`}>
-        Développeur Front-end React sur Toulouse. J'ai découvert la programmation web par curiosité,
-        ça a été une révélation. Suite à cela j'ai entrepris une reconversion Pro. <br /> <br />{" "}
-        J'ai voyagé aussi à la découverte du mobile avec Flutter. J’aime les nouvelles expériences
-        et les challenges.
+        En tant que développeur front-end react, je suis responsable de la création de l'interface
+        utilisateur d'une application ou d'un site web. <br /> <br /> J'utilise principalement le
+        framework react et les technologies web courantes telles que HTML, CSS et JavaScript pour
+        construire des interfaces utilisateur attrayantes et fonctionnelles. Je suis également
+        responsable de son maintien en veillant à ce qu'elle soit compatible avec différents
+        navigateurs et appareils. <br /> <br /> Passionné et motivé, je suis constamment à la
+        recherche de nouvelles façons de créer des applications web de qualité supérieure.
       </p>
       <Reorder.Group
         axis="y"
