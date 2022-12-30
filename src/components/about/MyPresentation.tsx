@@ -12,7 +12,7 @@ const MyPresentation = () => {
     "Passionné",
     "Autonome",
     "Autodidacte",
-    "Persévèrent",
+    "Persévérant",
     "Clean Code",
   ]);
   return (
