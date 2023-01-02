@@ -89,6 +89,7 @@ const ProjectCardStyled = styled.div`
       align-items: center;
       border-radius: 10px;
       h3 {
+        margin: 0;
         font-size: 1.5rem;
         color: white;
       }
@@ -100,7 +101,7 @@ const ProjectCardStyled = styled.div`
       }
 
       span {
-        margin-top: 10px;
+        margin: 0px;
         font-size: 1rem;
         font-weight: 600;
         color: white;
