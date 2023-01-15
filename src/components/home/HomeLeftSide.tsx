@@ -32,8 +32,7 @@ const HomeLeftSide = () => {
 
 const HomeLeftSideStyled = styled.div`
   height: 100vh;
-  width: 50vw;
-  background-color: white;
+  width: 550px;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -76,7 +76,6 @@ const MyPresentationStyled = styled.div`
     width: 120px;
     margin: 10px 0 0 15px;
     padding: 3px 5px 3px 5px;
-    cursor: grab;
     background-color: white;
     color: ${theme.colors.gray};
     border: 1px solid ${theme.colors.primaryColor};

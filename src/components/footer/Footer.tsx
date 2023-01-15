@@ -57,7 +57,6 @@ const FooterStyled = styled.footer`
   i {
     font-size: 40px;
     margin: 0 15px 0 15px;
-    cursor: pointer;
   }
   .iGitHub {
     color: white;

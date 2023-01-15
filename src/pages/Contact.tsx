@@ -1,9 +1,7 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import ContactForm from "../components/contact/ContactForm";
-import Footer from "../components/footer/Footer";
 import { AppContext } from "../context/Context";
-import { theme } from "../theme/theme";
 import TitlePage from "../ui-reusable/TitlePage";
 
 const Contact = () => {

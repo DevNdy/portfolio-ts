@@ -45,7 +45,6 @@ const ProjectCardStyled = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   transition: 0.7s;
 
   div {
@@ -67,14 +66,14 @@ const ProjectCardStyled = styled.div`
   }
   //anim
   .infos {
+    height: 245px;
     position: absolute;
+    width: 360px;
     top: 18px;
     left: 10px;
     background: rgba(212, 9, 60, 0.958);
     border-radius: 8px;
-    color: white;
-    height: 250px;
-    width: 360px;
+    border: 3px solid black;
     opacity: 0;
     transform: scaleX(0);
     transition: 0.7s;
@@ -96,7 +95,8 @@ const ProjectCardStyled = styled.div`
 
       p {
         font-size: 1rem;
-        color: #ececec;
+        font-weight: 600;
+        color: #f0f0f0;
         width: 340px;
       }
 
@@ -139,6 +139,7 @@ const ProjectCardStyled = styled.div`
   @media (max-width: 599px) {
     height: 250px;
     width: 340px;
+
     div {
       opacity: 0;
       img {
@@ -151,21 +152,22 @@ const ProjectCardStyled = styled.div`
     .infos {
       top: 13px;
       left: 10px;
-      height: 220px;
+      height: 215px;
       width: 320px;
 
       a {
         h3 {
-          margin: 10px 0 0 0;
+          margin: 5px 0 0 0;
         }
 
         p {
           width: 310px;
+          font-size: 14px;
         }
 
         span {
           height: 15px;
-          font-size: 13px;
+          font-size: 12px;
           margin: 0;
         }
       }

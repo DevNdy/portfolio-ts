@@ -11,9 +11,9 @@ const ProjectsList = () => {
 
   return (
     <ProjectsListStyled>
-      {projects.map((e: ProjectsProps) => (
+      {projects.map((e: ProjectsProps, i: number) => (
         <ProjectCard
-          key={e.id}
+          key={i}
           name={e.name}
           onClick={() => {}}
           description={e.description}

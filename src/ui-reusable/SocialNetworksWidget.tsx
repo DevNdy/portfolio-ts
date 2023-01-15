@@ -48,7 +48,6 @@ const SocialNetworksWidgetStyled = styled.div`
     font-size: 30px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.4) 1px 5px 5px, rgba(201, 201, 201, 0.3) 1px 1px 10px;
-    cursor: pointer;
     transition: 0.8s;
     &:hover {
       box-shadow: none;

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import Footer from "./components/footer/Footer";
 import NavBar from "./components/navbar/NavBar";
@@ -7,10 +7,16 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import LoaderPage from "./pages/LoaderPage";
 import Projects from "./pages/Projects";
+import CursorPerso from "./ui-reusable/CursorPerso";
 import SocialNetworksWidget from "./ui-reusable/SocialNetworksWidget";
 
 function App() {
   const [load, setLoad] = useState<boolean>(true);
+  let cursorRef = useRef<HTMLDivElement>(null);
+
+  function mousePos(e: React.MouseEvent<HTMLDivElement>) {
+    cursorRef.current?.setAttribute("style", `top:${e.pageY - 8}px; left:${e.pageX - 8}px;`);
+  }
 
   useEffect(() => {
     setInterval(() => {
@@ -20,7 +26,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <AppStyled onMouseMove={mousePos}>
       {load ? (
         <LoaderPage />
       ) : (
@@ -32,10 +38,15 @@ function App() {
           <About />
           <Contact />
           <Footer />
+          <CursorPerso cursorRef={cursorRef} />
         </>
       )}
-    </>
+    </AppStyled>
   );
 }
+
+const AppStyled = styled.div`
+  cursor: none;
+`;
 
 export default App;

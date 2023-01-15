@@ -75,6 +75,7 @@ const SkillWindowStyled = styled.div`
       top: 0;
       left: 0;
       background: rgba(212, 9, 60, 0.958);
+      border: 3px solid black;
       border-radius: 8px;
       color: white;
       height: 253px;

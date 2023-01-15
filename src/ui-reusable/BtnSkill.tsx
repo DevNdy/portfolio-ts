@@ -34,7 +34,6 @@ const BtnSkillStyled = styled.div`
     align-items: center;
     justify-content: center;
 
-    cursor: pointer;
     &:hover {
       border-radius: 50%;
       transform: rotate(0deg);

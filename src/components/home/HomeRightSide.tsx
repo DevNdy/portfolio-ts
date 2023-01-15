@@ -13,8 +13,9 @@ const HomeRightSide = () => {
 };
 
 const HomeRightSideStyled = styled.div`
-  height: 50vh;
-  width: 50vw;
+  height: 450px;
+  width: 400px;
+  margin-left: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
