@@ -88,7 +88,6 @@ const NavBarStyled = styled.header`
       text-align: end;
       z-index: 30;
       i {
-        cursor: pointer;
         font-size: 22px;
         margin-right: 30px;
         color: ${theme.colors.primaryColor};
