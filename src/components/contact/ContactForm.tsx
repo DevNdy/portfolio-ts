@@ -95,6 +95,7 @@ const ContactFormStyled = styled.div`
       border-radius: 5px;
       font-size: 18px;
       transition: 0.4s;
+      cursor: pointer;
       &:hover {
         background-color: ${theme.colors.primaryColor};
         color: white;

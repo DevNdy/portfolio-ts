@@ -12,11 +12,6 @@ import SocialNetworksWidget from "./ui-reusable/SocialNetworksWidget";
 
 function App() {
   const [load, setLoad] = useState<boolean>(true);
-  let cursorRef = useRef<HTMLDivElement>(null);
-
-  function mousePos(e: React.MouseEvent<HTMLDivElement>) {
-    cursorRef.current?.setAttribute("style", `top:${e.pageY - 8}px; left:${e.pageX - 8}px;`);
-  }
 
   useEffect(() => {
     setInterval(() => {
@@ -26,7 +21,7 @@ function App() {
   }, []);
 
   return (
-    <AppStyled onMouseMove={mousePos}>
+    <>
       {load ? (
         <LoaderPage />
       ) : (
@@ -38,15 +33,10 @@ function App() {
           <About />
           <Contact />
           <Footer />
-          <CursorPerso cursorRef={cursorRef} />
         </>
       )}
-    </AppStyled>
+    </>
   );
 }
-
-const AppStyled = styled.div`
-  cursor: none;
-`;
 
 export default App;

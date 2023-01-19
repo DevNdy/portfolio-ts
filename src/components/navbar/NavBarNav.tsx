@@ -51,6 +51,7 @@ const NavBarNavStyled = styled.nav`
       font-size: 21px;
       font-weight: 500;
       transition: 0.8s;
+      cursor: pointer;
       &:hover {
         background-color: ${theme.colors.primaryColor};
         color: white;

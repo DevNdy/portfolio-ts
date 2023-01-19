@@ -86,6 +86,7 @@ const MyPresentationStyled = styled.div`
     align-items: center;
     justify-content: center;
     transition: 0.4s;
+    cursor: grab;
 
     &:hover {
       background-color: ${theme.colors.primaryColor};
