@@ -62,7 +62,6 @@ const ContactFormStyled = styled.div`
       color: ${theme.colors.gray};
       border-radius: 5px;
       border: 0.5px solid ${theme.colors.primaryColor};
-      cursor: none;
       &:focus {
         outline-color: ${theme.colors.primaryColor};
       }
@@ -77,7 +76,6 @@ const ContactFormStyled = styled.div`
       color: ${theme.colors.gray};
       border: 0.5px solid ${theme.colors.primaryColor};
       padding: 5px;
-      cursor: none;
       &:focus {
         outline-color: ${theme.colors.primaryColor};
       }

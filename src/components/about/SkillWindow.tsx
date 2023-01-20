@@ -74,9 +74,6 @@ const SkillWindowStyled = styled.div`
       position: absolute;
       top: 0;
       left: 0;
-      background: rgba(212, 9, 60, 0.958);
-      border: 3px solid black;
-      border-radius: 8px;
       color: white;
       height: 253px;
       width: 500px;
@@ -88,11 +85,19 @@ const SkillWindowStyled = styled.div`
       align-items: center;
       justify-content: center;
 
+      //morphisme
+      background: rgba(216, 49, 91, 0.55);
+      box-shadow: 0 1px 5px 0 rgba(31, 38, 135, 0.32);
+      backdrop-filter: blur(4.5px);
+      -webkit-backdrop-filter: blur(4.5px);
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+
       h3 {
         margin: 10px 0 0 0;
         font-weight: 800;
         font-size: 22px;
-        color: #f7f4eb;
+        color: #fcfcfc;
         opacity: 1;
       }
     }

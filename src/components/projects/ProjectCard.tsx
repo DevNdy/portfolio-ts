@@ -66,20 +66,25 @@ const ProjectCardStyled = styled.div`
   }
   //anim
   .infos {
-    height: 245px;
+    height: 248px;
     position: absolute;
     width: 360px;
     top: 18px;
     left: 10px;
-    background: rgba(212, 9, 60, 0.958);
-    border-radius: 8px;
-    border: 3px solid black;
     opacity: 0;
     transform: scaleX(0);
     transition: 0.7s;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    //morphisme style
+    background: rgba(216, 49, 91, 0.55);
+    box-shadow: 0 3px 5px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 
     a {
       text-decoration: none;
@@ -90,7 +95,7 @@ const ProjectCardStyled = styled.div`
       h3 {
         margin: 0;
         font-size: 1.5rem;
-        color: white;
+        color: #ffffff;
       }
 
       p {
